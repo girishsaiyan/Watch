@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+ 
+    <style>
+
+        body{
+            background-color: rgb(34, 33, 33);
+        }
+
+        h1{
+            font-size: 100px;
+            color: white;
+        }
+
+        span{
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+    
+    
+</head>
+<body>
+
+    <h1 style="text-align: center;">Today Time</h1>
+
+    <div style="text-align: center;" id="time">
+
+        <span id="hrs">00</span>
+        <span>:</span>
+        <span id="mins">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+    </div>
+
+    
+    <script>
+
+  let hrs = document.getElementById('hrs');
+  let mins = document.getElementById('mins');
+  let sec = document.getElementById('sec');
+
+ 
+
+ setInterval(() => {
+
+ let currentTime = new Date();
+
+ hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : " ") + currentTime.getHours();
+ mins.innerHTML = (currentTime.getHours() < 10 ? "0" : " ") + currentTime.getMinutes();
+ sec.innerHTML = (currentTime.getHours() < 10 ? "0" : " ") + currentTime.getSeconds();
+
+  }, 1000);
+
+  setInterval(()=>{
+        
+      console.log("hello")
+      console.log("hello")
+      console.log("hello")
+      console.log("hello")
+      console.log("hello")
+
+  }, 10000)
+    
+    </script>
+
+</body>
+</html>
